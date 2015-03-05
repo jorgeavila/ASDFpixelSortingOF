@@ -20,21 +20,35 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     void sortColumn();
     void sortRow();
-    
-    
-    
+	int getFirstNotBlackX(int _x, int _y);
+	int getNextBlackX(int _x, int _y);
+	int getFirstBrightX(int _x, int _y);
+	int getNextDarkX(int _x, int _y);
+	int getFirstNotWhiteX(int _x, int _y);
+	int getNextWhiteX(int _x, int _y);
+	int getFirstNotBlackY(int _x, int _y);
+	int getNextBlackY(int _x, int _y);
+	int getFirstBrightY(int _x, int _y);
+	int getNextDarkY(int _x, int _y);
+	int getFirstNotWhiteY(int _x, int _y);
+	int getNextWhiteY(int _x, int _y);
+	
+	
     ofImage img;
-    int loops  =2 ;
-    int blackValue = -1000000;
-    int brigthnessValue = -600000000;
+	//string imgFileName = "PIA15635";
+	//string fileType = "png";
+
+    int loops;
+	int blackValue;
+    int brigthnessValue;
     int whiteValue;
     
-    int  row = 0;
-    int column = 0;
+    int  row;
+    int column;
     
-    bool saved = false;
+    bool saved;
 
-    char myState;
-    
+    int mode;
+	int width, height;
 		
 };
